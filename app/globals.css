@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: calc(0.625rem + 0.41666666666666663vw);
+}
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: calc(0.625rem + 0.41666666666666674vw);
+  }
+}
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: calc(0.8126951092611863rem + 0.20811654526534862vw);
+  }
+}
+@media screen and (max-width: 479px) {
+  html {
+    font-size: calc(0.7494769874476988rem + 0.8368200836820083vw);
+  }
+}
+
+@layer base {
+  :root {
+    --background: #f6f5f4;
+    --foreground: #202020;
+
+    --card: #ecece6ab;
+    --card-foreground: #202020;
+
+    --popover: #ededed;
+    --popover-foreground: #202020;
+
+    --primary: #b5fdb6;
+    --primary-foreground: #509551;
+
+    --secondary: #ecece6;
+    --secondary-foreground: #202020;
+
+    --muted: #ededed88;
+    --muted-foreground: #727272;
+
+    --accent: #b5fdb6;
+    --accent-foreground: #509551;
+
+    --destructive: #b82e2e;
+    --destructive-foreground: #202020;
+
+    --border: #202020;
+    --input: #202020;
+    --ring: #202020;
+
+    --radius: 0.5rem;
+
+    --font-parkinsans: "Parkinsans", sans-serif;
+    --font-inter-tight: "Inter Tight", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-interTight;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-parkinsans font-medium;
+  }
+  h4,
+  h5,
+  h6 {
+    @apply font-interTight font-medium;
+  }
+  h1 {
+    @apply text-7xl leading-[105%] tracking-[-0.02em];
+  }
+  h2 {
+    @apply text-6xl leading-[105%] tracking-[-0.02em];
+  }
+  h3 {
+    @apply text-5xl leading-[105%] tracking-[-0.02em];
+  }
+  h4 {
+    @apply text-4xl leading-[105%] tracking-[-0.02em];
+  }
+  h5 {
+    @apply text-3xl leading-[110%] tracking-[-0.02em];
+  }
+  h6 {
+    @apply text-2xl leading-[110%] tracking-[-0.02em];
+  }
+  p {
+    @apply text-base font-interTight leading-[130%];
+  }
+  a {
+    @apply text-lg font-interTight leading-[130%];
+  }
+  .highlight {
+    @apply bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text text-transparent;
+  }
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    @apply text-2xl md:text-4xl;
+  }
+  .blob {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(
+      180deg,
+      #98ec32 0%,
+      rgba(184, 164, 255, 0.6) 52.89%,
+      rgba(112, 97, 163, 0) 100%
+    );
+    filter: blur(50px);
+    z-index: -1;
+  }
+}
