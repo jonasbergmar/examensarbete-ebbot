@@ -27,7 +27,7 @@ const Hero = () => {
             <Pill label="Visual Identity" icon="palette" />
             <Pill label="Webflow Development" icon="code" />
           </div>
-          <p className=" text-muted-foreground text-lg leading-snug tracking-tight font-medium max-w-xl">
+          <p className=" text-foreground text-lg leading-snug tracking-tight font-medium max-w-xl">
             Ebbot AI is a SaaS company that helps businesses automate their
             customer service through EbootGPT, AI agents, EbbotAPI & livechat.
             To help them achieve their goal in aligning there visual identity
